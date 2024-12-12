@@ -1,10 +1,11 @@
 const express=require("express")
 const app=express()
 const port=8080
+const path=path()
+app.set("view engine","ejs")
 app.listen(port,(req,res)=>{
     console.log("This app is listening")
 })
 app.get("/msg",(req,res)=>{
-    res.send("this is new root")
-    console.log("this is the new root")
+   res.render("chat.ejs")
 })
