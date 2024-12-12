@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(229, 234, 144);
+}
+.header{
+    background-color: rgb(165, 238, 238);
+    border: solid red 2px;
+    text-align: center;
+    color: red;
+}
