@@ -23,7 +23,7 @@ app.set("view engine","ejs")
 app.listen(port,(req,res)=>{
     console.log("This app is listening")
 })
-app.get("/chat",async(req,res)=>{
+app.get("/",async(req,res)=>{
     const msg=await Chat.find()
    res.render("chat.ejs",{msg})
 })
