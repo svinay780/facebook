@@ -16,6 +16,20 @@
         </h2>
     </div>
 
+    <div class="msg">
+        <% for (m of msg) {%>
+            <h5>
+                <%= m.from %>
+            </h5>
+            <h3>
+                <%= m.msg %>
+            </h3>
+            <h5>
+                <%= m.to %>
+            </h5>
+    </div>
+    <% } %>
+
 
 </body>
 </html>
