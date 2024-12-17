@@ -26,4 +26,5 @@ app.listen(port,(req,res)=>{
 app.get("/",async(req,res)=>{
     const msg=await Chat.find()
    res.render("chat.ejs",{msg})
+  
 })
